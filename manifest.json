@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "description" : "浏览器输入助手",
+  "name": "浏览器输入助手",
+  "browser_action": {
+    "default_icon": "images/icon.png", // optional
+    "default_title": "浏览器输入助手",      // optional; shown in tooltip
+    "default_popup": "popup.html"        // optional
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "css":[
+        "css/contentScript.css"
+      ],
+      "js": [
+        "js/jquery.min.js",
+        "js/contentScript.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ],
+  "background": {
+    "scripts": [
+      "js/background.js",
+      "js/jquery.min.js"
+    ]
+  },
+  "icons": {
+    "16": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "permissions": [  // 应用协议页面
+    "tabs",
+    "storage",
+    "http://*/*",
+    "https://*/*"
+  ]
+}

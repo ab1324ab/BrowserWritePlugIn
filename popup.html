@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+</head>
+<body style="margin: 0;padding:  0;">
+<div id="app" style="width: 340px;background-color: whitesmoke;position: relative;">
+    <Layout>
+        <div style="padding: 0.85rem;">
+            <div class="tile">
+                <img style="vertical-align:middle;height: 40px" src="images/icon.png"/>
+                <span>网页辅助助手</span>
+                <span style="position: absolute;top: 1.30rem;right: .85rem;"><a style="text-decoration: none;color: black;" href="#">关闭X</a></span>
+            </div>
+            <div style="">
+                <div style="background-color: white;padding: 0.85rem">
+                    <div class="">
+                        <span>状态：</span>
+                        <span style="text-align: center;display: block;">=====》<fond id="inputSign" style="color: red">未连接</fond>《=====</span>
+                    </div>
+                    <div class="div-text-align">
+                        <input id="input-button" disabled class="input-button-disabled" type="button" style="" value="启动">
+                        <span style="color: red;font-size: 12px;text-align: center;display: block;" id="titleMsg"></span>
+                    </div>
+                </div>
+                <div style="background-color: white;padding: 0.85rem;margin-top: 0.85rem">
+                    <ul style="list-style-type: none;padding-inline-start: 0px;margin: 0;">
+                        <li>1、复制标识字符到辅助工具。</li>
+                        <li>2、点击<b style="color: #bba8a8">绑定输入</b>按钮。</li>
+                        <li>3、移动鼠标单击要绑定的输入框，直到输入框背景变蓝色。</li>
+                    </ul>
+                    <div style="float: right;font-size: 5px;font-family:  cursive;">
+                        本程序仅测试使用。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Layout>
+
+</div>
+<style>
+
+</style>
+
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+</html>

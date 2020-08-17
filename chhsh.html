@@ -1,0 +1,51 @@
+
+<html>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>粘贴监听测试</title>
+    <style>
+        DIV#editable {
+            width: 400px;
+            height: 300px;
+            border: 1px dashed blue;
+        }
+    </style>
+    <script type="text/javascript">
+
+        //$(function () {
+            //粘贴监听，删除剪切板的空格后进行粘贴
+            function paste_text(e) {
+                //debugger;
+                if ( e.clipboardData.items ) {
+                    ele = e.clipboardData.items
+                    //判断剪切板内复制的是文本
+                    alert("type:"+ele[0].type+",kind:"+ele[0].kind);
+                    if(ele[0].type=='text/plain' && ele[0].kind=='string'){
+                        var text = e.clipboardData.getData('Text');
+                        console.info(text);
+                        //去空格并截取前11位赋值到input中
+                        document.getElementById('q_phone').value=text.trim().substring(0,11);
+                    }
+                } else {
+                    alert('non-chrome');
+                }
+            }
+            //document.getElementById('q_phone').οnpaste=function(){return false;};
+            // $("#q_phone").onpaste(function () {
+            //     paste_text(event);
+            //     return false;
+            // })
+        //})
+
+
+    </script>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body >
+
+<input id="q_phone" onpaste="paste_text(event)" type="text" class="form-control input-sm" placeholder="粘贴监听区域" maxlength="11">
+<script id="qd285218131829716112609ddb27b9a3dd5a0982dc74" src="https://wp.qiye.qq.com/qidian/2852181318/29716112609ddb27b9a3dd5a0982dc74" charset="utf-8" async defer></script>
+</body>
+</html>

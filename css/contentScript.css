@@ -1,0 +1,77 @@
+.input-title {
+    position: fixed;
+    margin-top: 9px;
+    z-index: 9999;
+    border: 1px solid #707379;
+    background-color: #333740;
+    color: #d4d5d5;
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: cursive;
+    display:none;
+    /*overflow: hidden;*/
+    /*height: 22px;*/
+    /*font-weight: bold;*/
+}
+
+.input-title-shape {
+    border-width: 0px 8px 10px 8px;
+    position: absolute;
+    top: -10px;
+    border-style: solid;
+    width: 0px;
+    border-color: rgba(255, 0, 0, 0) rgba(34, 139, 34, 0) #333740 rgba(0, 255, 255, 0);
+}
+
+.input-line {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: normal;
+    font-family: monospace;
+}
+
+.input-x {
+    margin-left: 3px;
+    margin-right:  3px;
+}
+
+.rightMenuContent{
+    display: none;
+    margin: 0 auto;
+    width: 300px;
+    border: 1px solid whitesmoke;
+    box-shadow: 2px 1px 10px #777777;
+    position: absolute;
+    background-color: white;
+    z-index: 9999999999;
+}
+
+.content-div{
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.content-div div{
+    padding-left: 26.4px;
+    padding-right: 26.4px;
+    padding-top:5.6px;
+    padding-bottom: 5.6px;
+    cursor: default;
+}
+.content-div div:hover{
+    background-color: #3d9bff;
+    color: white;
+    text-shadow: white 0 0 1px;
+}
+.choose-logo{
+    display: none;
+    float: right
+}
+
+.seletctEl{
+    box-shadow:1px 1px 20px rgb(10,10,10);
+}
+
